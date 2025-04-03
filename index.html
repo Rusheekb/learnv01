@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn 2 Lead Tutoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Learn 2 Lead Tutoring</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner-container">
+        <div class="banner-slide active"><img src="assets/banner1.jpg" alt="Banner 1"></div>
+        <div class="banner-slide"><img src="assets/banner2.jpg" alt="Banner 2"></div>
+        <div class="banner-slide"><img src="assets/banner3.jpg" alt="Banner 3"></div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    <div class="indicators">
+        <span class="indicator active-indicator" onclick="currentSlide(1)"></span>
+        <span class="indicator" onclick="currentSlide(2)"></span>
+        <span class="indicator" onclick="currentSlide(3)"></span>
+    </div>
+    <section id="home">
+        <h2>Welcome to Learn 2 Lead Tutoring</h2>
+        <p>Your success is our priority. Sign up for a free consultation today!</p>
+        <div class="cta-buttons">
+            <a href="#contact" class="cta-btn">Contact Us</a>
+            <a href="#services" class="cta-btn">Our Services</a>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Learn 2 Lead Tutoring Academy, we believe that education is the key to unlocking potential and opening doors to future opportunities. Founded by a dedicated team of educators passionate about making a difference, our academy has quickly become a beacon of learning and growth.
+
+        </p>
+    </section>
+    <!-- <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Math</li>
+            <li>Science</li>
+            <li>English</li>
+            <li>History</li>
+            <li>Coding</li>
+            <li>Test Preparation</li>
+            <li>Language Help</li>
+            <li>And More!</li>
+        </ul>
+    </section> -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-calculator"></i>
+                <h3>Math</h3>
+                <p>From basic arithmetic to advanced calculus</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-book"></i>
+                <h3>English</h3>
+                <p>Reading comprehension, writing, and literature</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-atom"></i>
+                <h3>Science</h3>
+                <p>Biology, chemistry, physics, and more</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-globe-americas"></i>
+                <h3>Test Prep</h3>
+                <p>SAT, ACT, AOL, MCAT, LSAT</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <!-- <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form> -->
+        <p>Phone: <a href="tel:+19258547020">(925) 854-7020</a></p>
+        <p>Email: <a href="mailto:learn2leadtutoring@gmail.com">learn2leadtutoring@gmail.com</a></p>
+    </section>
+    
+    <!-- <section id="social-media">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin-icon.png" alt="LinkedIn"></a> -->
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial">
+                <p>"My tutor helps me learn a lot of new topics to keep me ahead in my classes. They always explains new topics in a way that I can understand. In science I learned about the periodic table and in the end of class we played a quiz game to have fun and learn! They make class fun by playing educational games to help me learn but also have fun!"</p>
+                - 7th grade student
+            </div>
+            <div class="testimonial">
+                <p>"My tutor is really good at teaching and understanding with what I’m struggling with. She comes up with several teaching methods if one is not working for me and she makes sure I’m growing."</p>
+                - 9th grade student
+            </div>
+            <div class="testimonial">
+                <p>"My tutor has an incredible knack for making complex subjects feel simple and manageable. They have helped me significantly improve my math skills through personalized attention and patient explanation. They also incorporate real-life examples to ensure that I not only understand the material but can apply it in everyday situations. Their support has boosted my confidence and academic performance."</p>
+                - 3rd grade student
+            </div>
+            <div class="testimonial">
+                <p>"Learning with my tutor has been a transformative experience. They're not only knowledgeable but also genuinely passionate about teaching. Each session with them is enriching and interactive, particularly their use of multimedia resources that cater to my learning style. With their guidance, I have excelled in English literature and developed a love for writing. Their dedication is truly inspiring, and I look forward to every class."</p>
+                - 11rd grade student
+            </div>
+        </div>
+    </section>
+    <!-- <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item"><h3>What subjects do you offer tutoring in?</h3><p>We offer tutoring in Math, Science, English, and Test Preparation.</p></div>
+        <div class="faq-item"><h3>How can I sign up for tutoring sessions?</h3><p>You can sign up by filling out the contact form or calling us directly.</p></div>
+    </section> 
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Coming soon...</p>
+    </section>-->
+    <footer>
+        <p>&copy; 2024 Learn 2 Lead Tutoring. All rights reserved.</p>
+    </footer>
+</body>
+</html>
